@@ -1,0 +1,11 @@
+{"timestamp":"2025-07-13T05:33:41.201804","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-13T05:33:41.202571","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-13T05:33:41.993265Z","level":"info","event":"            source  ...                                            content","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.993683Z","level":"info","event":"0  Financial Times  ...  Complete digital access to quality analysis an...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.994242Z","level":"info","event":"1             CNBC  ...  Stock futures ticked lower overnight after U.S...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.994683Z","level":"info","event":"2             CNBC  ...  The Bank of Japan faces a stiff challenge as i...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.995005Z","level":"info","event":"3        The Verge  ...  After a wild weekend, Elon Musk is playing wok...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.995317Z","level":"info","event":"4        Bloomberg  ...  Apple Inc.s top executive in charge of artific...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.995598Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:41.995889Z","level":"info","event":"[5 rows x 8 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-13T05:33:42.044387","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

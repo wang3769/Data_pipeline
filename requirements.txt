@@ -1,0 +1,7 @@
+
+requests
+sqlite3
+pandas
+os
+wordcloud
+matplotlib
