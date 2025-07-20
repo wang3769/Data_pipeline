@@ -1,7 +1,9 @@
 
 requests
-sqlite3
 pandas
-os
 wordcloud
 matplotlib
+langchain
+transformers>=4.40.0
+huggingface-hub>=0.20.0
+accelerate>=0.25.0
