@@ -1,8 +1,8 @@
 FROM apache/airflow:latest
 
-# COPY requirements.txt .
+COPY requirements.txt .
 
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 USER root
 

@@ -21,6 +21,8 @@ def data_ingestion():
 def data_visualization():
     subprocess.run(["python", os.path.join(SCRIPT_DIR, "01_data_visualization.py")], check=True)
 
+def data_summarization():
+    subprocess.run(["python", os.path.join(SCRIPT_DIR, "02_data_summarization.py")], check=True)
 
 dag = DAG(
 
@@ -70,8 +72,13 @@ data_visualization_task = PythonOperator(
     python_callable=data_visualization,
 )
 
+data_summarization_task = PythonOperator(
+    task_id='data_summarization',
+    python_callable=data_summarization,
+)
+
 
 
 # Set the dependencies between the tasks
 
-print_welcome_task >> print_date_task >> data_ingestion_task >> data_visualization_task
+print_welcome_task >> print_date_task >> data_ingestion_task >> data_visualization_task >> data_summarization_task

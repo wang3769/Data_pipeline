@@ -6,7 +6,7 @@ services:
 
   sleek-airflow:
 
-    image: sleek-airflow-latest:latest
+    image: data-pipeline-airflow:latest
 
     # build:
     #   context: .
@@ -17,6 +17,7 @@ services:
       - ./airflow:/opt/airflow
       - ./scripts:/opt/airflow/scripts  
       - ./data/raw:/opt/airflow/data
+      - ./models:/opt/airflow/models
 
 
 
